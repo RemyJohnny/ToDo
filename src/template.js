@@ -1,6 +1,6 @@
-export default function renderTemplatePage(container, name) {
+export default function renderTemplatePage(container, project) {
   const templateWrapper = document.createElement("div");
-  templateWrapper.setAttribute("id", `${name}`);
+  templateWrapper.setAttribute("id", `${project.name}`);
   templateWrapper.classList.add("tabContent");
   templateWrapper.innerHTML = `
         <div class="flex font-body font-medium gap-3 text-xl items-start">
@@ -12,7 +12,7 @@ export default function renderTemplatePage(container, name) {
       
         </div>
         <div>
-        <span>${name}</span>
+        <span>${project.name}</span>
         </div>
       </div>
         `;

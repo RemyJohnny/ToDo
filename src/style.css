@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .open {
-  @apply border-l-4 border-blue-600 bg-blue-50;
+  @apply border-l-4 border-blue-800 bg-slate-800;
 }
